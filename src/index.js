@@ -282,7 +282,7 @@ class Swiper extends Component{
         )
     }
 }
-Swiper.PropTypes={
+Swiper.propTypes={
     index:PropTypes.number,  //初始值
     height:PropTypes.oneOfType([  //容器的高度
        PropTypes.number,
