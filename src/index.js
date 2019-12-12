@@ -36,7 +36,7 @@ class Swiper extends Component{
         this.timer=0;
         this.slides=0;
     }
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         this.slides=this.props.children.length;
     }
     componentDidMount(){
