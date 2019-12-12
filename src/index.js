@@ -9,7 +9,7 @@ import cn from 'classnames'
 import createStyle from './createStyle'
 import * as animateTypes from './animateTypes'
 import * as styles from "./style"
-class Index extends Component{
+class Swiper extends Component{
     static defaultProps={
         index:0,
         height:200,
@@ -282,7 +282,7 @@ class Index extends Component{
         )
     }
 }
-Index.PropTypes={
+Swiper.PropTypes={
     index:PropTypes.number,  //初始值
     height:PropTypes.oneOfType([  //容器的高度
        PropTypes.number,
@@ -299,5 +299,5 @@ Index.PropTypes={
     onSlideChange:PropTypes.func, //回调
     createStyle:PropTypes.func //样式生成器，可自行传入
 };
-Index.animateTypes=animateTypes;
-export default  Index
+Swiper.animateTypes=animateTypes;
+export default  Swiper
