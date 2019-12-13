@@ -259,9 +259,9 @@ class Swiper extends Component{
         return(
             <div className="swiper-container"
                  style={{...styles.swiper_container,height:`${height}px`}} ref='swiper'
-                 onTouchStart={(e)=>{e.preventDefault();this.handleTouchStart(e)}}
-                 onTouchMove={(e)=>{e.preventDefault();this.handleTouchMove(e)}}
-                 onTouchEnd={(e)=>{e.preventDefault();this.handleTouchEnd(e)}}
+                 onTouchStart={(e)=>{this.handleTouchStart(e)}}
+                 onTouchMove={(e)=>{this.handleTouchMove(e)}}
+                 onTouchEnd={(e)=>{this.handleTouchEnd(e)}}
             >
                 <div className="swiper-wrapper" style={styles.wrapper_style} >
                     {sliderDom}
